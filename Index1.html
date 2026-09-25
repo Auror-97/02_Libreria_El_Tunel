@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Túnel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&display=swap" rel="stylesheet">
+<style>
+/* ENCABEZADO */
+  .encabezado {
+    display: grid;
+     }
+@media (max-width:3500px) {
+
+h1 {
+grid-column: 1/2;
+margin-left: 40rem;
+font-family: "Caveat";
+font-style: italic;
+color: rgb(163, 80, 41);
+font-size: 50px;
+}
+.busqueda {
+    grid-column: 2/2;
+    margin-top: 4rem;    
+}
+.search {
+    margin-left: -5px;
+    cursor: pointer;
+}
+.seccion1 button {
+    cursor: pointer;
+}
+.carrusel button {
+    cursor: pointer;
+}
+.boton2 {
+    cursor: pointer;
+}
+}
+nav,a { 
+text-align: center;
+text-decoration: none;
+color: white;
+background-color: rgb(197, 170, 134);
+padding: 1rem;
+}
+
+a {
+margin-left: 4rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton1 {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-color: rgb(216, 172, 115);
+    color: rgb(194, 186, 186);
+}
+
+.imagen1 {
+    background-image:url(Imagenes/portada.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+    max-width: 1800px;
+    display: block;
+    margin-top: -3.8rem;
+   
+}
+.text1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    padding-top: 100px;
+}
+.text2 {
+    text-align: center;
+    font-size: 20px;
+    color:white;
+
+}
+
+h3 {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+/* PRIMERA SECCIÓN DE LIBROS RECOMENDACIONES CONT1 */
+
+.seccion1 {
+    display:flex;   
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+
+}
+
+.cont1 {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.libro1{
+    width: 200px;
+    height: 350px;
+}
+
+.seccion1 button {
+    background-color: rgb(170, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px
+}
+
+h3 {
+color: rgb(148, 34, 34);
+font-family: Arial, Helvetica, sans-serif;
+}
+/*SEGUNDA SECCION DE LIBROS COMPRAS CARRUSEL */
+.carrusel {
+    display: flex;
+    width: 100%;
+    max-width: 94%;
+    height: cover;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3rem;
+    
+}
+.cont2 {
+    justify-content: center;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.libro2 {
+   width: 200px;
+    height: 350px; 
+}
+
+.carrusel button {
+    background-color: rgb(170, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px
+
+}
+
+.boton2 {
+    color: white;
+    background-color: rgb(175, 76, 30);
+    border: none;
+    padding: 5px;
+    margin-left: -4px;
+}
+
+.precio {
+    color: rgb(202, 131, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*TERCERA SECCION COLUMNAS */
+.columnas {
+    margin-top: 8rem;
+    column-count: 2;
+    margin-bottom: 5rem;
+
+}
+.text3 {
+    margin-left: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img2 {
+    width:44rem;
+}
+
+.esperamos {
+    color: brown;
+    text-align: center;
+    margin-left: 15rem;
+    
+}
+/*FOOTER*/
+table{
+    background-color:rgb(197, 170, 134);
+    color: white;
+    width: 100%;
+    padding-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulofooter {
+    margin-left: 5rem;
+}
+.col1 {
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    vertical-align: top;
+    
+
+}
+
+.col2 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    vertical-align: top;
+}
+
+.col3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    vertical-align: top;
+}
+
+footer .iconos2 {
+    align-items: center;
+    text-align: center;
+}
+
+.input2 {
+    width: 400px;
+    color: rgb(211, 206, 206);
+    border: none;
+    padding: 5px;
+}
+
+hr {
+    background-color: white;
+    width: 85%;
+    color: white;
+}
+</style>
+<header>
+    <div class="encabezado">
+    <h1>El Túnel</h1>
+
+    <div class="busqueda">
+    <input class="boton1" type="search" value="Buscar" placeholder="Buscar">
+    <button class="search"> <img src="Iconos/search.svg" alt="lupa" width="12px" height="10px"></button>
+        <img src="Iconos/person.svg" alt="persona" >
+        <img src="Iconos/heart.svg" alt="corazon">
+        <img src="Iconos/handbag-fill.svg" alt="compras">
+    </div>
+
+    </div>
+
+    <!--BARRA DE NAVEGACION-->
+    <div>
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Libros</a>
+<a href="#">Los más leidos</a>
+<a href="#">Accesorios</a>
+<a href="#">Sucursal</a>
+</nav>
+</div>
+</header>
+
+<div class="imagen1"> <!--Recuerda colocar la imagen en style como backwound image-->
+    <p class="text1">...Creando nuevos mundos,historias y <br> recuerdos.</p>
+    <p class="text2">"Vivir consiste en construir futuros recuerdos"</p>
+</div>
+<body>
+    <Main>
+    <!--PRIMERA SECCIÓN DE LIBROS RECOMENDACIONES CONT1-->
+    <h3>Recomendaciones</h3>
+    <div class="seccion1">
+        <div class="cont1">
+            <img class="libro1" src="Imagenes/Harry Potter.jpeg" alt="">
+            <div>
+                <strong>Harry Potter y la piedra filosofal</strong>
+                <p>J.K Rowling</p>
+                <button>VER MÁS</button>
+            </div>
+        </div>
+            
+        <div class="cont1">
+            <img class="libro1" src="Imagenes/Cien años de soledad.jpeg" alt="">
+            <div><strong>Cien años de soledad</strong>
+            <p>Gabriel Garcia Marquez</p>
+            <button>VER MÁS</button>
+            </div>
+        </div>
+
+         <div class="cont1">
+            <img class="libro1" src="Imagenes/La insoportable levedad del ser.jpeg" alt="">
+            <div><strong>La insoportable levedad del ser</strong>
+            <p>Millan Kundera</p>
+            <button>VER MÁS</button>
+            </div>
+        </div>
+
+         <div class="cont1">
+            <img class="libro1" src="Imagenes/Como agua para chocolate.jpeg" alt="">
+            <div><strong>Como agua para chocolate</strong>
+            <p>Laura Esquivel</p>
+            <button>VER MÁS</button>
+            </div>
+        </div>
+    </div>
+    <!--SEGUNDA SECCION DE LIBROS COMPRAS CARRUSEL-->
+    <h3>Libros</h3>
+    <div class="carrusel">
+        <div class="cont2">
+            <img class="libro2" src="Imagenes/Fuente es el silencio.jpeg" alt=""><br>
+            <strong>Fuerte es el silencio</strong>
+            <p>Elena Poniawtoska</p>
+            <p class="precio">$450.00 <button>COMPRAR</button> </p> 
+        </div>
+
+        <div class="cont2">
+            <img class="libro2" src="Imagenes/Rayuela.jpeg" alt=""><br>
+            <strong>Rayuela</strong>
+            <p>Julio Cortazar</p>
+            <p class="precio">$445.00 <button>COMPRAR</button></p> 
+            
+        </div>
+
+        <div class="cont2">
+            <img class="libro2" src="Imagenes/La ley de herodes.jpeg" alt=""><br>
+            <strong>La ley de herodes</strong>
+            <p>Jorge Ibargüengotia</p>
+            <p class="precio">$150.00 <button>COMPRAR</button> </p> 
+        </div>
+
+        <div class="cont2">
+            <img class="libro2" src="Imagenes/Arrancame la vida.jpeg" alt=""><br>
+            <strong>Arrancame la vida</strong>
+            <p>Angeles Mastreta</p>
+            <p class="precio">$350.00 <button>COMPRAR</button> </p> 
+        </div>
+
+        <div class="cont2">
+            <img class="libro2" src="Imagenes/Una habitacion propia.jpeg" alt=""><br>
+            <strong>Una Habitación propia</strong>
+            <p>Virginia Woolf</p>
+            <p class="precio">$240.00  <button>COMPRAR</button> </p>
+        </div>
+
+         <div class="cont2">
+            <img class="libro2" src="Imagenes/Una habitacion propia.jpeg" alt=""><br>
+            <strong>Una Habitación propia</strong>
+            <p>Virginia Woolf</p>
+            <p class="precio">$240.00 <button>COMPRAR</button></p> 
+        </div>
+    </div>
+    <!--COLUMNAS CONOCENOS-->
+   <div class="columnas">
+    <h3>Conocenos</h3>
+    <div class="text3">
+    
+        <p>El tunel es una cafebreria ideal para los amantes de la literatura</p>
+        <p>Además de su servicio de venta de libros y productos en linea pusedes visitar nuestra sucursal y acompañar tu lectura con una taza de café o bebida de tuelección, o bien, disfrutar de los diversos eventos culturales que tenemos para ti.</p>
+        <p>Siguenos en redes sociales y mantente atento a la cartelera de eventos.</p>
+        <strong class="esperamos">¡Te esperamos!</strong>
+    </div>
+
+    <div >
+        <img class="img2" src="Imagenes/libreria.jpg" alt="">
+    </div>
+    </div>
+    </Main>
+ 
+    <footer>
+<table>
+    <tr class="titulofooter">
+        <th>El Tunel <hr> </th>
+        <th>Información <hr></th>
+        <th>Suscribete <hr> </th>
+       
+    </tr>
+    <tr>
+            <td class="col1">
+                Un espacio para los amantes de la literatura. En cuentra la mejor <br> seleccion de libros, accesorios y un acogedor espacio en la CDMX <br> para leer y tomar un café con tu libro favorito. 
+                <br><br><img src="Iconos/geo-alt-fill.svg" alt="">   Av. Alvaro Obregon 90, Roma Nte, Cuauhtemoc. 06700 Ciudad de <br> México.
+                <br><br><img src="Iconos/telephone-fill.svg" alt="">  56 98 89 07 99 87 </p>
+                <strong><img src="Iconos/envelope-fill.svg" alt=""> eltunel.libros@gmail.com</strong>
+                <br><br><div class="iconos2">
+                    <img src="Iconos/facebook.svg" alt="">
+                    <img src="Iconos/twitter-x.svg" alt="">
+                    <img src="Iconos/instagram.svg" alt="">
+                    <img src="Iconos/youtube.svg" alt="">
+                </div>
+            </td>
+            <td class="col2">
+            Inicio <br><br>
+            Acerca de El Túnel <br><br>
+            Tarjeta de cliente frecuente <br><br>
+            Ventas por mayoreo <br><br>
+            Facturación <br><br>
+            Contactanos <br><br>
+            Aviso de privacidad <br><br> 
+            Términos y condiciones  <br><br>
+            </td>
+        
+            <td class="col3">Registrate para recibir noticias de promociones, eventos y actualizaciones
+            <br><br><input class="input2" type="search" value="Ingresa tu email" placeholder="Ingresa tu email">
+            <button class="boton2">Enviar</button> 
+            </td>
+    </tr>
+    <th colspan="3">
+<p>2024 © <strong>El tunel.</strong>Todos los Derechos Reservados | Diseñado por Escuela de Código ADIP</p> 
+    </th>
+</table>
+    </footer>
+</body>
+
+</html>
